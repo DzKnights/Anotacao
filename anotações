@@ -1,0 +1,82 @@
+#include <stdio.h>//printf(), scanf()
+#include <stdlib.h>//necessário para o systema ("pause")
+
+int main () { //inicio do programa +
+
+ int array[5] = {13, 27, 0, 2, 5}; // um array (ou vetor)é uma variável que pode armazenar diversos outros valores de acordo com seu tipo
+ char nome [20]; //um array de caracteres é comumente chamado de string, em referencia a um tipo de variável de texto que existe em outras linguagens, mas não em C
+ printf("Digite seu nome: "); 
+scanf("%s" , nome);
+printf("O nome armazenado foi: %s \n", nome );
+
+ printf("Mordekaiser \n"); //o \n serve para deixar separado em outra linha 
+  
+  int n1 =10;
+  
+  printf ("Valor de n1 = %d \n",n1);
+  	
+   n1 =50;
+  printf ("Valor de n1 = %d \n",n1);
+
+system ("pause"); //pausar  na tela - somente 	
+
+  {char letra; //variavel do tipo 	char, contém caract
+int x; //variável para o número inteiro 
+float salario; //Float é usado para números com virgulas 
+ 
+ 
+ //atribuindo valores para os 	variaveis
+ 
+ letra ='a';
+ x=10;
+ salario=399.4;
+ 
+ //Saida de dadosna tela
+ 
+ 
+ printf("letra = %c \n" , letra); //O %c é usado para char 
+ printf("x = %d \n" , x); // O %d é usado para o int 
+ printf("salario = %.2f \n" , salario); // O %f é usado para float,mas tmb poder usar o %.2f para deixar com menos casas decímais 
+ 
+ int a,b,resto,r;// Essa montagem de programação é usado para uso de divissão ou soma ou subitração tanto fazso mudar os sinais.
+
+printf ("\n Digite um numero:");
+scanf("%d" , &a);
+	
+printf("\n Digite um numero:");	
+scanf ("%d" , &b);	
+		
+r = a / b; 
+printf("\n Resultado da divisao inteira de %d / %d =%d \n", a,b,r);	
+	
+resto = a % 2;
+printf("\n Resultado da divisao = %d \n" , resto);	
+}
+ //Maneira de se usar de os sinais de soma divisão e subitração. 
+ int v1 = 1; 
+ int v2 = 2;
+ int v3 = v2 + v1;// operador de soma, ele soma
+ int v4 = v3 - 6;// mesma coisa mas esse subtrai
+ int v5 = 5 * 2;// m u l t i p l i c a ç ã o
+ int v6 = v5 / v2;// d i v i s ã o
+ int v7 = v6 % 3;// pega o resto da divisão, no caso a divisão é 5/3 então o rsto é 2
+ int v8 = v2++;// soma 1
+ int v9 = v2--;// subtrai 1
+ 
+ //Maneira de programar uma media de nota escolar, etc...
+ float nota1, nota2 , media;
+
+printf("Digite a primeira nota:");
+scanf("%f" , &nota1);
+
+printf("Digite a segunda nota:");
+scanf("%f" , &nota2);
+
+media = (nota1 + nota2) / 2;
+
+printf("Media da nota = %.2f \n" , media);
+ 
+ 
+ 
+ return 0; //valor do retorno de função main - zero significa que executou com sucesso }
+} //fim
